@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.8.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.8.0)" variant="all" version="8.8.0">
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the manifest, `androidx.work.impl.background.systemjob.RescheduleReceiver`, was not found in the project or the libraries"
+        errorLine1="        android:name=&quot;androidx.work.impl.background.systemjob.RescheduleReceiver&quot;>"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="25"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Class requires API level 26 (current min is 24): `android.graphics.drawable.AdaptiveIconDrawable`"
+        errorLine1="        is AdaptiveIconDrawable -> {"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/screentimeapp/AppIconHelper.kt"
+            line="41"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.10.0"
+        errorLine1="     implementation(&quot;androidx.work:work-runtime-ktx:2.9.0&quot;) // ✅ Add WorkManager"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="126"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_horizontal_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetLeft=&quot;@dimen/abc_edit_text_inset_horizontal_material&quot;"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="17"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_horizontal_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetRight=&quot;@dimen/abc_edit_text_inset_horizontal_material&quot;"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="18"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_top_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetTop=&quot;@dimen/abc_edit_text_inset_top_material&quot;"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="19"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_bottom_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetBottom=&quot;@dimen/abc_edit_text_inset_bottom_material&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="20"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@drawable/abc_textfield_default_mtrl_alpha` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="        &lt;item android:state_enabled=&quot;false&quot; android:drawable=&quot;@drawable/abc_textfield_default_mtrl_alpha&quot;/>"
+        errorLine2="                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="33"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@drawable/abc_textfield_activated_mtrl_alpha` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="        &lt;item android:drawable=&quot;@drawable/abc_textfield_activated_mtrl_alpha&quot;/>"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="34"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="DataExtractionRules"
+        message="The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher."
+        errorLine1="        android:allowBackup=&quot;false&quot;"
+        errorLine2="                             ~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="16"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="QueryAllPackagesPermission"
+        message="A `&lt;queries>` declaration should generally be used instead of QUERY_ALL_PACKAGES; see https://g.co/dev/packagevisibility for details"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.QUERY_ALL_PACKAGES&quot; />"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="9"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 24"
+        errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/screentimeapp/ScreenTimeModule.kt"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.react_native_dev_server_port` appears to be unused">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.react_native_dev_server_port` appears to be unused">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.react_native_dev_server_port` appears to be unused">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="IconLauncherShape"
+        message="Launcher icon used as round icon did not have a circular shape">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher_round.png"/>
+    </issue>
+
+</issues>
